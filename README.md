@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # HarryAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # personal-portfolio-RDH
 >>>>>>> ff63b0f3d6ff8ce6f01cac4e119bf54583b13b46
+=======
+# personal-portfolio-RDH
+>>>>>>> ff25271d86ef8db547e953cc0e0481eed14d88ea
