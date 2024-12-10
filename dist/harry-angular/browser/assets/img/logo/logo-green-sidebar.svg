@@ -1,0 +1,31 @@
+<svg width="110" height="60" viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Bracket < -->
+  <path d="M25 15 L15 30 L25 45" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  
+  <!-- Forward Slash / -->
+  <path d="M35 45 L45 15" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="4" 
+        stroke-linecap="round"/>
+  
+  <!-- Text "rdev" -->
+  <text x="50" y="38" 
+        font-family="monospace" 
+        font-size="32" 
+        font-weight="bold" 
+        fill="white">rdev</text>
+  
+  <!-- Right Bracket > -->
+  <path d="M135 15 L145 30 L135 45" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
