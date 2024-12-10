@@ -1,0 +1,281 @@
+
+<div>
+
+  <!-- header area start -->
+  <app-header-two></app-header-two>
+  <!-- header area end -->
+
+  <main>
+
+    <!-- hero banner area start -->
+    <app-hero-banner-two></app-hero-banner-two>
+    <!-- hero banner area end -->
+
+    <!-- award area start -->
+    <section class="award__area pt-30 pb-30">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-2 col-xl-2 col-lg-10 col-md-3">
+               <div class="award__wrapper-4">
+                  <h3 class="award__title-4">Awards & Recognitions</h3>
+               </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-9">
+               <div class="award__slider">
+                  <div class="award__slider-active swiper-container">
+                     <div class="award__item-wrapper swiper-wrapper">
+                        <div *ngFor="let img of award_images" class="award__item-4 mr-30 swiper-slide">
+                           <img [src]="img" alt="award-img">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <!-- award area end -->
+
+   <!-- case study area start -->
+   <section class="case__area pt-110" id="cases">
+    <div class="container">
+       <div class="row align-items-end">
+          <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-7">
+             <div class="section__title-wrapper-4 pr-5 mb-60">
+                <span class="section__title-pre-4">Case Results</span>
+                <h3 class="section__title-4">We are a professional law firm located in Berlin.</h3>
+             </div>
+          </div>
+          <div class="col-xxl-5 col-xl-4 col-lg-4 col-md-5">
+             <div class="case__more text-md-end mb-70">
+                <a routerLink="/portfolio/grid" class="tp-btn-border-brown">Browse Case Results</a>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div *ngFor="let item of case_results; let i = index" class="col-xxl-6 col-lg-6">
+             <div class="case__item mb-50" data-sal="slide-up" [attr.data-sal-delay]="(i+1)*50 + 100" data-sal-duration="1000">
+                <div class="case__thumb w-img fix">
+                   <img [src]="item.bg" alt="bg-img">
+                </div>
+                <div class="case__content transition-3">
+                   <div class="case__price">
+                      <span>${{item.price.toFixed(2)}}</span>
+                   </div>
+                   <h3 class="case__title">
+                      <a routerLink="/portfolio/details">{{item.title}}</a>
+                   </h3>
+                   <p>{{item.text}}</p>
+
+                   <div class="case__btn">
+                      <a routerLink="/portfolio/details" class="tp-btn-border-brown-sm">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+      </div>
+   </section>
+   <!-- case study area end -->
+
+   <!-- about area start -->
+   <section id="about" class="about__area grey-bg-8 pt-200 pb-200">
+    <div class="container">
+       <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+             <div class="about__thumb-wrapper-4 p-relative">
+                <div class="about__thumb-4">
+                   <img class="about-thumb-main" src="/assets/img/about/4/about-img-1.png" alt="">
+                   <img class="about__thumb-shape-1" src="/assets/img/about/4/about-shape-1.png" alt="">
+                </div>
+                <div class="about__experience-4 d-none d-sm-flex align-items-start" data-parallax='{"y": -100, "smoothness": 100}'>
+                   <div class="about__experience-icon-4 mr-15">
+                      <span>
+                         <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.9708 15.1069C34.9708 18.029 34.1126 20.7094 32.6356 22.9463C30.48 26.1707 27.0671 28.448 23.0952 29.0324C22.4166 29.1533 21.7181 29.2138 20.9996 29.2138C20.281 29.2138 19.5825 29.1533 18.9039 29.0324C14.9321 28.448 11.5191 26.1707 9.36351 22.9463C7.88655 20.7094 7.02832 18.029 7.02832 15.1069C7.02832 7.30779 13.2755 1 20.9996 1C28.7237 1 34.9708 7.30779 34.9708 15.1069Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M39.462 34.1914L36.1688 34.9773C35.4303 35.1587 34.8515 35.723 34.6918 36.4686L33.9933 39.4311C33.614 41.0433 31.5782 41.527 30.5204 40.2574L21 29.2137L11.4796 40.2775C10.4218 41.5471 8.38597 41.0634 8.00675 39.4512L7.30819 36.4887C7.12856 35.7431 6.54975 35.1587 5.83123 34.9975L2.53801 34.2115C1.02113 33.8488 0.482239 31.9342 1.57998 30.8258L9.36395 22.9663C11.5195 26.1907 14.9325 28.468 18.9043 29.0525C19.5829 29.1734 20.2815 29.2338 21 29.2338C21.7185 29.2338 22.4171 29.1734 23.0957 29.0525C27.0675 28.468 30.4805 26.1907 32.636 22.9663L40.42 30.8258C41.5178 31.9141 40.9789 33.8286 39.462 34.1914Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.1574 9.0208L23.335 11.3988C23.4946 11.7212 23.9138 12.0437 24.293 12.1042L26.4286 12.4669C27.7858 12.6886 28.1051 13.6962 27.1271 14.6837L25.4706 16.3563C25.1911 16.6385 25.0315 17.1826 25.1313 17.5857L25.6103 19.6614C25.9895 21.2938 25.1313 21.9386 23.6942 21.0721L21.6983 19.8831C21.3391 19.6614 20.7403 19.6614 20.381 19.8831L18.3851 21.0721C16.9481 21.9185 16.0899 21.2938 16.4691 19.6614L16.9481 17.5857C17.0279 17.2028 16.8882 16.6385 16.6088 16.3563L14.9522 14.6837C13.9742 13.6962 14.2936 12.7087 15.6508 12.4669L17.7864 12.1042C18.1456 12.0437 18.5648 11.7212 18.7244 11.3988L19.902 9.0208C20.4808 7.73102 21.5187 7.73102 22.1574 9.0208Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                         </svg>
+                      </span>
+                   </div>
+                   <div class="about__experience-content-4">
+                      <h4><span>16</span>+</h4>
+                      <p>Yours of experience <br> in this field.</p>
+                   </div>
+                </div>
+                <div class="about__thumb-shape-2 p-relative">
+                   <img class="about__thumb-shape-logo" src="/assets/img/about/4/about-shape-2.png" alt="">
+                   <img class="about__thumb-shape-logo-icon" src="/assets/img/about/4/about-shape-2-icon.png" alt="">
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+             <div class="about__wrapper-4 pr-70">
+                <div class="section__title-wrapper-4 pr-5 mb-15">
+                   <span class="section__title-pre-4">About Jake Weary</span>
+                   <h3 class="section__title-4-2">We are a professional law firm located in Berlin, Germany.</h3>
+                </div>
+                <p>The city name generator uses real world names rather than an algorithm to assemble unusual names. plus you can select from many different countries to immediately flavor the resulting random town names to what you desire.</p>
+                <p>How you use the city or town name is up to you. all results may be freely used in any work.</p>
+
+                <div class="about__btn-4 mt-45 d-sm-flex align-items-center">
+                   <a routerLink="/pages/contact" class="tp-btn-brown mr-30">Schedule Constitution</a>
+                   <div class="about__call d-flex align-items-center">
+                      <div class="about__call-icon">
+                         <span>
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M26.9609 22.2289C26.9609 22.6969 26.8569 23.1779 26.6359 23.6459C26.4149 24.1139 26.1289 24.5559 25.7519 24.9719C25.1149 25.6739 24.4129 26.1809 23.6199 26.5059C22.8399 26.8309 21.9949 26.9999 21.0849 26.9999C19.7589 26.9999 18.3419 26.6879 16.8469 26.0509C15.352 25.4139 13.857 24.5559 12.375 23.4769C10.88 22.3849 9.46297 21.1759 8.11098 19.8369C6.77198 18.4849 5.56298 17.0679 4.48399 15.586C3.41799 14.104 2.55999 12.622 1.936 11.153C1.312 9.67097 1 8.25398 1 6.90198C1 6.01798 1.156 5.17299 1.468 4.39299C1.78 3.59999 2.274 2.87199 2.96299 2.222C3.79499 1.403 4.70499 1 5.66698 1C6.03098 1 6.39498 1.078 6.71998 1.234C7.05798 1.39 7.35698 1.624 7.59098 1.962L10.607 6.21298C10.841 6.53798 11.01 6.83698 11.127 7.12298C11.244 7.39598 11.309 7.66898 11.309 7.91598C11.309 8.22798 11.218 8.53998 11.036 8.83897C10.867 9.13797 10.62 9.44997 10.308 9.76197L9.31997 10.789C9.17697 10.932 9.11197 11.101 9.11197 11.309C9.11197 11.413 9.12497 11.504 9.15097 11.608C9.18997 11.712 9.22897 11.79 9.25497 11.868C9.48897 12.297 9.89197 12.856 10.464 13.532C11.049 14.208 11.673 14.897 12.349 15.586C13.051 16.275 13.727 16.9119 14.416 17.4969C15.092 18.0689 15.651 18.4589 16.0929 18.6929C16.1579 18.7189 16.2359 18.7579 16.3269 18.7969C16.4309 18.8359 16.5349 18.8489 16.6519 18.8489C16.8729 18.8489 17.0419 18.7709 17.1849 18.6279L18.1729 17.6529C18.4979 17.3279 18.8099 17.0809 19.1089 16.9249C19.4079 16.743 19.7069 16.652 20.0319 16.652C20.2789 16.652 20.5389 16.704 20.8249 16.821C21.1109 16.9379 21.4099 17.1069 21.7349 17.3279L26.0379 20.3829C26.3759 20.6169 26.6099 20.8899 26.7529 21.2149C26.8829 21.5399 26.9609 21.8649 26.9609 22.2289Z" stroke="#03A291" stroke-width="2" stroke-miterlimit="10"/>
+                               <path d="M22.4501 10.0998C22.4501 9.31979 21.8391 8.1238 20.9291 7.1488C20.0971 6.2518 18.9921 5.5498 17.9001 5.5498" stroke="#03A291" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                               <path d="M27.0001 10.1C27.0001 5.06899 22.9311 1 17.9001 1" stroke="#03A291" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                         </span>
+                      </div>
+                      <div class="about__call-content">
+                         <h4>Call us at</h4>
+                         <p><a href="tel:602-762-472-96">+(602) 762 472 96</a></p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+      </div>
+   </section>
+   <!-- about area end -->
+
+   <!-- fun fact area start -->
+   <section class="fact__area fact__translate">
+    <div class="container">
+       <div class="row gx-2 gy-2 gy-lg-0">
+          <div class="col-xxl-4 col-lg-4 col-md-6">
+             <div class="fact__item white-bg d-flex align-items-center" data-sal="slide-down" data-sal-delay="150" data-sal-duration="1000">
+                <div class="fact__icon">
+                   <p>
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M5.65196 0.000139197C6.21895 0.0173827 6.76794 0.116382 7.29984 0.29728H7.35294C7.38894 0.31438 7.41594 0.333279 7.43394 0.350379C7.63283 0.414279 7.82093 0.486278 8.00093 0.585277L8.34293 0.738275C8.47793 0.810274 8.63993 0.944373 8.72992 0.999272C8.81992 1.05237 8.91892 1.10727 8.99992 1.16937C9.99981 0.405279 11.2139 -0.00871701 12.4649 0.000139197C13.0328 0.000139197 13.5998 0.0803821 14.1389 0.26128C17.4607 1.34127 18.6577 4.98623 17.6578 8.1722C17.0908 9.80028 16.1638 11.2862 14.9498 12.5003C13.2119 14.1832 11.3048 15.6772 9.25192 16.9642L9.02692 17.1001L8.79292 16.9552C6.73284 15.6772 4.81496 14.1832 3.06088 12.4913C1.8549 11.2772 0.927005 9.80028 0.351011 8.1722C-0.665978 4.98623 0.53101 1.34127 3.88887 0.24238C4.14987 0.152381 4.41897 0.089382 4.68897 0.0542823H4.79696C5.04986 0.0173827 5.30096 0.000139197 5.55296 0.000139197H5.65196ZM13.6709 2.84425C13.3019 2.71735 12.8969 2.91625 12.7619 3.29425C12.6359 3.67224 12.8339 4.08624 13.2119 4.22034C13.7888 4.43634 14.1749 5.00423 14.1749 5.63332V5.66122C14.1578 5.86732 14.2199 6.06622 14.3459 6.21922C14.4719 6.37222 14.6609 6.46131 14.8589 6.48021C15.2279 6.47031 15.5429 6.17422 15.5699 5.79532V5.68822C15.5969 4.42734 14.8328 3.28525 13.6709 2.84425Z" fill="#AB6C56"/>
+                      </svg>
+                      <span>7628</span>
+                   </p>
+                </div>
+                <div class="fact__content">
+                   <h4>Trusted Clients</h4>
+                   <p>Number Of Clients</p>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-4 col-lg-4 col-md-6">
+             <div class="fact__item white-bg d-flex align-items-center" data-sal="slide-down" data-sal-delay="170" data-sal-duration="1000">
+                <div class="fact__icon">
+                   <p>
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M9 0L11.781 5.634L18 6.543L13.5 10.926L14.562 17.118L9 14.193L3.438 17.118L4.5 10.926L0 6.543L6.219 5.634L9 0Z" fill="#AB6C56"/>
+                      </svg>
+                      <span>95%</span>
+                   </p>
+                </div>
+                <div class="fact__content">
+                   <h4>Successful Cases</h4>
+                   <p>Largest Winning Value</p>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-4 col-lg-4 col-md-6">
+             <div class="fact__banner fact__banner-overlay p-relative z-index-1" data-sal="slide-down" data-sal-delay="190" data-sal-duration="1000">
+                <div class="fact__banner-bg include-bg" style="background-image: url(/assets/img/counter/fact/fact-banner-bg.jpg);"></div>
+                <div class="fact__banner-content">
+                   <h5>17,642+</h5>
+                   <p>Criminal Cases and <br> Defense</p>
+                </div>
+             </div>
+          </div>
+       </div>
+      </div>
+    </section>
+   <!-- fun fact area end -->
+
+   <!-- history area start -->
+   <section class="history__area pt-30 pb-140">
+    <div class="container">
+       <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+             <div class="section__title-wrapper-4 mb-60">
+                <span class="section__title-pre-4">Out History</span>
+                <h3 class="section__title-4">We are top lawyers and history</h3>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+             <div class="history__thumb-wrapper d-sm-flex pr-70">
+                <div class="history__thumb">
+                   <img src="/assets/img/history/history-1.jpg" alt="">
+                </div>
+                <div class="history__thumb-right-wrapper">
+                   <div class="history__thumb-right p-relative include-bg" style="background-image: url(/assets/img/history/history-2.jpg);">
+                      76+
+                   </div>
+                   <div class="history-thumb-text">
+                      <p>Winning Awards</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6">
+             <div class="history__list pl-65 pr-90">
+                <div *ngFor="let item of history_lists;let i = index" class="history__list-item d-flex align-items-start">
+                   <div class="history__year" data-sal="slide-left" [attr.data-sal-delay]="(i+1)*50 + 100" data-sal-duration="1000">
+                      <h5 class="history__year-title">{{item.year}}</h5>
+                   </div>
+                   <div class="history__list-content">
+                      <div class="history__list-dot">
+                         <span></span>
+                      </div>
+                      <div class="history__list-content-inner" data-sal="slide-right" [attr.data-sal-delay]="(i+1)*50 + 100" data-sal-duration="1000">
+                         <h4 class="history__list-title">{{item.title}}</h4>
+                         <p>{{item.text}}</p>
+                         <div class="history__list-meta">
+                            <span>{{item.meta}}</span>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+     </div>
+   </section>
+   <!-- history area end -->
+
+   <!-- video area start -->
+   <app-video-area-one></app-video-area-one>
+   <!-- video area end -->
+
+   <!-- service area start -->
+   <app-service-area-two></app-service-area-two>
+   <!-- service area end -->
+
+   <!-- blog area start -->
+   <app-blog-area-two></app-blog-area-two>
+   <!-- blog area end -->
+
+   <!-- testimonial area start -->
+   <app-testimonial-two></app-testimonial-two>
+   <!-- testimonial area end -->
+
+   <!-- team area start -->
+   <app-team-area-two></app-team-area-two>
+   <!-- team area end -->
+
+   <!-- counter area start -->
+   <app-counter-area-two></app-counter-area-two>
+   <!-- counter area end -->
+
+    <!-- contact area start -->
+    <app-lawyer-contact></app-lawyer-contact>
+    <!-- contact area end -->
+  </main>
+
+  <!-- footer start -->
+  <app-footer-two></app-footer-two>
+  <!-- footer end -->
+</div>
